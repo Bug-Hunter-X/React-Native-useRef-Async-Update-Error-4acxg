@@ -1,0 +1,1 @@
+This React Native code throws an error because `useRef` is used incorrectly.  The `current` property of the ref is not immediately available after component mounting; it's updated asynchronously. This causes an error when accessing `myRef.current.measure` during initial render.
